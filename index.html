@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Myntra Functional Clone</title>
+    <title>Real eState</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <header>
         <div class="logo_container">
-            <a href="#"><img class="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"></a>
+            <a href="#"><img class="myntra_home" src="images/myntra_logo.webp" alt=" "></a>
         </div>
         <nav class="nav_bar">
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-            <a href="#">Home & Living</a>
-            <a href="#">Beauty</a>
-            <a href="#">Studio <sup>New</sup></a>
+            <a href="">Home</a>
+           
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Blogs <sup>New</sup></a>
         </nav>
         <div class="search_bar">
             <span class="material-symbols-outlined search_icon">search</span>
@@ -24,71 +49,174 @@
         </div>
         <div class="action_bar">
             <div class="action_container">
-                <span class="material-symbols-outlined action_icon">person</span>
-                <span class="action_name">Profile</span>
+               <a href="http://localhost:3000/"> <span class="material-symbols-outlined action_icon">wallet</span></a>
+                <span class="action_name">Wallet</span>
             </div>
-
             <div class="action_container">
-                <span class="material-symbols-outlined action_icon">favorite</span>
+                <a href=""><span class="material-symbols-outlined action_icon">favorite</span></a>
                 <span class="action_name">Wishlist</span>
-            </div>
-
-            <a class="action_container" href="pages/bag.html">
-                <span class="material-symbols-outlined action_icon">shopping_bag</span>
-                <span class="action_name">Bag</span>
                 <span class="bag-item-count">0</span>
-            </a>
+            </div>
+            <div class="action_container">
+                <a href="pages/profile.html"> <span class="material-symbols-outlined action_icon">person</span></a>
+                 <span class="action_name">Profile</span>
+             </div>
+            
         </div>
     </header>
     <main>
+        <div class="header">
+            <h1>The only platform to connect property owners and property investors directly with the tools and marketplace to transact.</h1>
+        </div>
+    
+        <div class="content-container">
+            <div class="card">
+                <h2>Listing from Richard & Ashley</h2>
+                <div class="property-image">
+                    <img src="https://production.prism.vestaequity.net/property-media/image/2024/05/23/3458948917512239235/71ea2b350d16407498e3a00e22ef9333.jpg?quality=100&w=468" alt="Property Image"> <!-- Replace with actual image path -->
+                </div>
+                <div class="property-info">
+                    <p class="price">$871,600</p>
+                    <p class="status">Active</p>
+                    <p class="rate">$348/sqft</p>
+                    <p class="address">700 Equinox Way, Palm Springs, CA, 92262</p>
+                    <p class="equity">Equity Listed</p>
+                    <p class="equity-value">$261,480 - 30%</p>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </div>
+    
+            <div class="card marketplace">
+                <h2>700 Equinox Way, Palm Springs, CA, 92262</h2>
+                <div class="property-image">
+                    <img src="https://production.prism.vestaequity.net/property-media/image/2024/05/23/3458948917512239235/71ea2b350d16407498e3a00e22ef9333.jpg?quality=100&w=468" alt="Property Image"> <!-- Replace with actual image path -->
+                </div>
+                <p>Listing 20% for $40,000</p>
+                <p>Offer to buy $16,000 of the $40,000</p>
+                <p>Accept offer</p>
+                <p>$16,000 USDC deposited in wallet - 8% asset token added to portfolio</p>
+                <hr style="justify-content: center;">
+                <p style="font-size: large; margin-top: 50px; ">"Revolutionizing workflows by eliminating maximum paperwork with the power of blockchain technology."</p>
+            </div>
+    
+            <div class="card">
+                <h2>Offer from Madeline</h2>
+                <div class="property-image">
+                    <img src="https://production.prism.vestaequity.net/property-media/image/2024/05/23/3458948917512239235/71ea2b350d16407498e3a00e22ef9333.jpg?quality=100&w=468" alt="Property Image"> <!-- Replace with actual image path -->
+                </div>
+                <p>Posted December 15th, 2020</p>
+                <p>How much equity would you like to purchase?</p>
+                <div class="slider-container">
+                    <input type="range" min="0" max="20" value="8" class="slider">
+                    <p>0% - 8% - 20%</p>
+                </div>
+                <div class="price-time">
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="text" id="price" value="$16,000">
+                    </div>
+                    <div>
+                        <label for="time">Time Limit</label>
+                        <input type="text" id="time" value="24 hours">
+                    </div>
+                </div>
+                <p class="equity-offer">Your Offer - $16,000 - 8%</p>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    
+        <div class="info-section">
+            <div class="info-box">
+                <h3>Property Owner</h3>
+                <p>The property owner decides what percentage of the property equity they want to sell and lists it on the marketplace. There is no loan or monthly payments.</p>
+            </div>
+            <div class="info-box">
+                <h3>Marketplace</h3>
+                <p>We connect property owners and property investors with the solution to tokenize a property, divide it, and sell a percentage with residential rights fully retained by the property owner.</p>
+            </div>
+            <div class="info-box">
+                <h3>Property Investor</h3>
+                <p>The property investor decides what percentage of the property equity they want to buy and makes an offer. Investors partake in the appreciation of the property.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="m-p" style="margin: 5px; padding: 3px; justify-content: center; align-items: center;">
+            <h2 style="font-size: 300%; text-align-last: center; color: rgb(0, 0, 0); align-items: center; justify-content: center; font-weight: bolder; font-family: 'Times New Roman', Times, serif; margin-top: 50px;">Search for Valuable Properties</h2>
+        </div>
+        <div class="search-container">
+            <div class="overlay">
+                <div class="filter-section">
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Filter by Location">
+                    </div>
+                    <div class="filter-group">
+                        <label for="property-age">Property Age</label>
+                        <input type="text" id="property-age" placeholder="Filter by Property Age">
+                    </div>
+                    <div class="filter-group">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type">
+                            <option value="">Filter by Property Type</option>
+                            <!-- Add options as needed -->
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="min-value">Market Value</label>
+                        <div class="range-group">
+                            <input type="number" id="min-value" placeholder="Min Value">
+                            <input type="number" id="max-value" placeholder="Max Value">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="min-sqft">Min & Max $/sqft</label>
+                        <div class="range-group">
+                            <input type="number" id="min-sqft" placeholder="Min $/sqft">
+                            <input type="number" id="max-sqft" placeholder="Max $/sqft">
+                        </div>
+                    </div>
+                    <button class="hero-button" id="searchButton">Search</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="m-p" style="margin: 5px; padding: 3px; justify-content: center; align-items: center;">
+            <h2 style="font-size: 300%; text-align-last: center; color: rgb(0, 0, 0); align-items: center; justify-content: center; font-weight: bolder; font-family: 'Times New Roman', Times, serif;">Market Place based on your search results</h2>
+        </div>
+        <hr>
         <div class="items-container">
            
         </div>
+        
     </main>
+    <hr>
     <footer> 
-        <h4 class="clone">"CLONE BY MOHAMMED SHAHID"</h4>
-        <div class="footer_container">
-           
-            <div class="footer_column">
-                <h3>ONLINE SHOPPING</h3>
-
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
+        
+        <div class="footer-container">
+            
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <span>|</span>
+                <a href="#">Help</a>
+                <span>|</span>
+                <a href="#">Let's Connect</a>
+                <span>|</span>
+                <a href="#">Fundraising</a>
+                <span>|</span>
+                <a href="#">FAQs</a>
+                <span>|</span>
+                <a href="#">Privacy</a>
+                <span>|</span>
+                <a href="#">Terms</a>
             </div>
-
-            <div class="footer_column">
-                <h3>ONLINE SHOPPING</h3>
-
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
-            </div>
-
-            <div class="footer_column">
-                <h3>ONLINE SHOPPING</h3>
-
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
-            </div>
+        
+            
+            
         </div>
         <hr>
 
         <div class="copyright">
-            © 2023 www.myntra.com. All rights reserved.
+            © 2024 TECH TITANS. All rights reserved.
         </div>
     </footer>
     <script src="data/items.js"></script>

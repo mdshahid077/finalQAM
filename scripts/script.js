@@ -1,6 +1,13 @@
 let bagItems = [];
 onLoad();
 
+document.getElementById('searchButton').addEventListener('click', function() {
+    const itemsContainer = document.querySelector('.items-container');
+    if (itemsContainer) {
+        itemsContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
 
 function onLoad(){
     let bagItemsStr = localStorage.getItem('bagItems');
@@ -26,6 +33,7 @@ function displayBagIcon(){
     
 }
 
+
 function displayItemsOnHomePage(){
     let itemsContainerElememt = document.querySelector('.items-container');
 
@@ -44,13 +52,14 @@ items.forEach(item => {
     <div class="company">${item.company}</div>
     <div class="item-name">${item.item_name}</div>
     <div class="price">
-        <span class="current-price">Rs ${item.current_price}</span>
-        <span class="original-price">Rs ${item.original_price}</span>
+        <span class="current-price">$ ${item.current_price}</span>
+        <span class="original-price">$ ${item.original_price}</span>
         <span class="discount">(${item.discount_percentage}% OFF)</span>
     </div>
-    <button class="btn-add-bag" onclick="addToBag(${item.id})">Add to Bag</button>
+    <button class="btn-add-bag" onclick="addToBag(${item.id})">Add to Wish List</button>
     </div>`;
 });
 itemsContainerElememt.innerHTML =  innerHtml;
 }
+
 
